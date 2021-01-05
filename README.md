@@ -1,25 +1,5 @@
-<p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/readme/socialanalyzerlogo_.png"></p>
-
-#
-[![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/info&label=version&query=$.version&colorB=blue&style=flat-square)](https://github.com/qeeqbox/social-analyzer/blob/main/info) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/info&label=build&query=$.build&colorB=green&style=flat-square)](https://github.com/qeeqbox/social-analyzer/blob/main/info) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/info&label=test&query=$.test&colorB=green&style=flat-square)](https://github.com/qeeqbox/social-analyzer/blob/main/info) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/info&label=verified%20sites&query=$.websites&colorB=blue&style=flat-square)](https://github.com/qeeqbox/social-analyzer/blob/main/info) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/info&label=verified%20detections&query=$.detections&colorB=blue&style=flat-square)](https://github.com/qeeqbox/social-analyzer/blob/main/info) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/info&label=special%20detections&query=$.special&colorB=blue&style=flat-square)](https://github.com/qeeqbox/social-analyzer/blob/main/info) [![Generic badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/info&label=awaiting%20verification&query=$.awaiting_verification&colorB=orange&style=flat-square)](https://github.com/qeeqbox/social-analyzer/blob/main/info) [![Generic badge](https://img.shields.io/static/v1?label=%F0%9F%91%8D&message=!&color=yellow&style=flat-square)](https://github.com/qeeqbox/social-analyzer/stargazers)
 
 API and Web App for analyzing & finding a person profile across +300 social media websites. It includes different string analysis and detection modules, you can choose which combination of modules to use during the investigation. The detection modules utilize a rating mechanism based on different detection techniques, which produces a rate value that starts from 0 to 100 (No-Maybe-Yes)
-
-**Please submit your contribution in a Pull Request!**
-
-## Updates
-- (New) Added more automated tests for handling Pull Requests (will be adding documentation on how PR are being handled)
-- (New) Added logic that enhance FindUserProfilesSlow & ShowUserProfilesSlow checking speed (Limited to docker-compose)👏
-- (New) Added FindOrigins (This extracts well-known names with their origins from the username) 👏
-- (New) Added descriptions' logic to websites (will be adding the categories later on) 👏
-- Added Python CLI (limited to FindUserProfilesFast option)
-- Added a Slack [channel](https://qeeqbox.slack.com/messages/social-analyzer)
-- Added Custom user-agent option
-- Added NodeJS CLI (You can use this project from Command Line, but it's limited to FindUserProfilesFast option)
-- Added an optional timeout and implicit wait for each detection (Some websites have a delay logic implemented in the backend)
-- Added logs (user request)
-- Added 5 seconds timeout to https.get (user request)
-- Added the API documentation [Wiki](https://github.com/qeeqbox/social-analyzer/wiki)
 
 ## Security Testing
 
@@ -114,26 +94,8 @@ cd social-analyzer
 docker build -t social-analyzer . && docker run -p 9005:9005 -it social-analyzer
 ```
 
-## Running Issues
-```
-Make sure to update to the latest nodejs and npm
-```
-
 ## Closing the app by port number
 ```
 sudo kill -9 $(sudo lsof -t -i:9005)
 ```
 
-## Goals
-- Adding the generic websites detections (These need some reviewing, but I will try to add them in 2021)
-
-## Resources
-- DuckDuckGo API, Google API, NodeJS, bootstrap, selectize, jQuery, Wikipedia and font-awesome
-- Let me know if I missed a reference or resource!
-
-## Disclaimer\Notes
-- This tool meant to be used locally (It does not have any type of Access Control)
-- If you want your website to be excluded from this project, please reach out
-
-## Contact
-[![Generic badge](https://img.shields.io/badge/slack-@qeeqbox-yellow.svg?logo=slack&style=flat-square)](https://qeeqbox.slack.com/messages/social-analyzer)
