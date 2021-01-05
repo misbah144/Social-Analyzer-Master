@@ -22,7 +22,7 @@ API and Web App for analyzing & finding a person profile across +300 social medi
 Profile images **will not** be blurred. If you want them to be blurred, turn that option on
 
 ## (New) Find Profile CLI (Fast)
-<img src="https://raw.githubusercontent.com/misbah144/Social-Analyzer-Master/main/README.md/cli.gif" style="max-width:768px"/>
+<img src="https://raw.githubusercontent.com/qeeqbox/social-analyzer/main/readme/cli.gif" style="max-width:768px"/>
 
 ## Features
 - String Analysis
